@@ -9,8 +9,203 @@
   <!-- Site Properties -->
   <title>Test template</title>
   <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+  <style>
+    body {
+      padding-top: 50px;
+    }
+    .column {
+      width: 750px;
+    }
+  </style>
 </head>
 <body>
+  <div class="ui grid">
+    <div class="computer tablet only row">
+      <div class="ui borderless inverted fixed menu navbar page">
+
+        <!-- Left -->
+        <!-- Logo  -->
+        <a href="#" class="brand item">
+          <img class="logo" src="assets/images/logo.png">
+          Project Name
+        </a>
+
+        <!-- Center -->
+        <!-- Search Bar -->
+        <div class="ui search mini item">
+          <div class="ui icon input">
+            <input class = "prompt" type="text" placeholder="Search...">
+            <i class="search icon"></i>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <!-- Notificazion Dropdown -->
+        <div class="ui simple dropdown right item">
+          Notifications <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#">notify 1</a>
+            <a class="item" href="#">notify 2</a>
+            <a class="item" href="#">Open</a>
+          </div>
+        </div>
+        <!-- Registered User -->
+        <div class="ui simple dropdown item">
+          Name Surname <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#">Profile</a>
+            <a class="item" href="#">Log Out</a>
+          </div>
+        </div>
+        <!-- Owner User -->
+        <a href="#" class="item">
+          My Restaurant(s)
+        </a>
+        <!-- Anonymous User -->
+        <div class="item">
+          <div class="ui primary button right">Sign up</div>
+        </div>
+        <div class="item">
+          <div class="ui button right">Log-in</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Mobile View Menu -->
+
+    <div class="mobile only row">
+      <div class="ui borderless fixed inverted navbar menu">
+
+        <!-- Left -->
+        <!-- Logo  -->
+        <a href="#" class="brand item">
+          <img class="logo" src="assets/images/logo.png">
+          Logo
+        </a>
+
+        <!-- Center -->
+        <!-- Search Bar -->
+        <div class="ui search mini item">
+          <div class="ui icon input">
+            <input class = "prompt" type="text" placeholder="Search...">
+            <i class="search icon"></i>
+          </div>
+        </div>
+        <div class="right menu open">
+          <a href="" class="menu item">
+            <i class="content icon"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="ui vertical navbar menu">
+
+        <!-- "padding" -->
+        <a href="" class="item"></a>
+        <a href="" class="item"></a>
+
+        <!-- Right -->
+        <!-- Notification Dropdown -->
+        <div class="ui item">
+          <div class="text">Notifications </div>
+          <div class="menu">
+            <a class="item" href="#">notify 1</a>
+            <a class="item" href="#">notify 2</a>
+            <a class="item" href="#">Open</a>
+          </div>
+        </div>
+
+        <!-- Registered User -->
+        <div class="item">
+          <div class="ui text item">Name Surname </div>
+          <div class="menu">
+            <a class="item" href="#">Profile</a>
+            <a class="item" href="#">Log Out</a>
+          </div>
+        </div>
+
+        <!-- Owner User -->
+        <a href="#" class="item">
+          My Restaurant(s)
+        </a>
+
+        <!-- Anonymous User -->
+        <div class="item">
+          <div class="ui primary button right">Sign up</div>
+        </div>
+        <div class="item">
+          <div class="ui button right">Log-in</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui middle aligned center aligned grid">
+      <div class="column">
+          <h2 class="ui header">
+
+              <div class="content">
+                  Reimpostazione profilo
+              </div>
+          </h2>
+          <form class="ui large form">
+              <div class="ui stacked segment">
+                  <div class="field">
+                      <div class="ui left icon input">
+                          <i class="user icon"></i>
+                          <input type="text" name="nome" placeholder="Nome">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <div class="ui left icon input">
+                          <i class="user icon"></i>
+                          <input type="text" name="cognome" placeholder="Cognome">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <div class="ui left icon input">
+                          <i class="user icon"></i>
+                          <input type="text" name="email" placeholder="Email">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <div class="ui left icon input">
+                          <i class="lock icon"></i>
+                          <input type="password" name="password" placeholder="Vecchia password">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <div class="ui left icon input">
+                          <i class="lock icon"></i>
+                          <input type="password" name="nuova_password" placeholder="Nuova password">
+                      </div>
+                  </div>
+                   <div class="field">
+                      <div class="ui left icon input">
+                          <i class="lock icon"></i>
+                          <input type="password" name="conf_password" placeholder="Conferma password">
+                      </div>
+                  </div>
+                  <div class="ui text" align="right">
+              		<a href="invio_req_pass.html">Password dimenticata?</a>
+          		</div>
+
+          		</br>
+                  <div class="ui fluid large blue submit button">Modifica</div>
+
+                  </br>
+
+                  <div class="ui fluid submit button">Annulla</div>
+              </div>
+
+
+          </form>
+
+
+  </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="dist/semantic.min.js"></script>
