@@ -140,7 +140,6 @@
 <!-- End Menu -->
 
 <div class="ui container">
-
   <!-- Restaurant Image -->
   <div class="ui grid">
     <div class="column">
@@ -148,13 +147,13 @@
     </div>
   </div>
 
-  <div class="ui grid">
+  <div class="ui center aligned middle aligned grid">
     <!-- Restaurant Name -->
-    <div class="center aligned column">
-        <div class="ui header large">
-          Trattoria Milanese
-        </div>
-        <!-- <div class="ui divider"></div> -->
+    <div class="ui header large">
+      Trattoria Milanese
+      <div class="ui basic tiny button">
+        Reclama
+      </div>
     </div>
   </div>
 
@@ -214,7 +213,7 @@
       </div>
 
     <!-- Show Reviews/Map Buttons -->
-    <div class="ui center aligned four columns grid">
+    <div class="ui stackable center aligned four columns grid">
       <div class="column">
         <div class=" two ui basic buttons">
           <button class="ui button">Recensioni</button>
@@ -223,8 +222,53 @@
         </div>
       </div>
     </div>
-  </div>
 
+
+    <div class="ui one column centered grid">
+      <div class="column">
+        <div class="ui divider"></div>
+        <div class="ui comments">
+          <div class="comment">
+            <a class="avatar">
+              <img src="/images/avatar/small/stevie.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Stevie Feliciano</a>
+              <div class="metadata">
+                <div class="date">2 days ago</div>
+                <div class="rating">
+                  <i class="star icon"></i>
+                  5 Faves
+                </div>
+              </div>
+              <div class="text">
+                Hey guys, I hope this example comment is helping you read this documentation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui center aligned grid">
+      <div class="column">
+        <div class="ui segment">
+          <div class="ui header">Write a review</div>
+            <div class="ui large center rating" data-rating="1" data-max-rating="5"></div>
+              <div class="ui center comment">
+                <form class="ui small reply form">
+                  <div class="field">
+                    <textarea></textarea>
+                  </div>
+                  <div class="ui basic submit labeled icon button">
+                    <i class="icon edit"></i> Add Reply
+                  </div>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
