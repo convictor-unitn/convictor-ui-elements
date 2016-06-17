@@ -142,20 +142,27 @@
 
 <div class="ui container stackable internally celled grid">
   <!-- Restaurant Image -->
-  <div class="five wide column">
-    <div class="ui segment">
-      immagine
-    </div>
-
-    <!-- Show Reviews/Map Buttons -->
-    <div class="ui center aligned equal width grid">
-      <div class="ui large buttons">
-        <button class="ui button">Recensioni</button>
-        <div class="or"></div>
-        <button class="ui button active">Mappa</button>
+    <div class="five wide column">
+      <div class="ui grid">
+        <div class="row olive">
+          <div class="five wide column">
+            <div class="ui segment">
+              immagine
+            </div>
+          </div>
+        </div>
+        <!-- Show Reviews/Map Buttons -->
+        <div class="row">
+          <div class="ui center aligned equal width grid">
+            <div class="ui large buttons">
+              <button class="ui button">Recensioni</button>
+              <div class="or"></div>
+              <button class="ui button active">Mappa</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
 
   <div class="eleven wide column">
@@ -213,5 +220,7 @@
   <script src="../test/dist/semantic.min.js"></script>
   <!-- Menu mobile js -->
   <script src="../partials/menu/menu_mobile/menu_mobile.js"></script>
+  <!-- Data rating script enabler -->
+  <script src="restaurant_profile.js"></script>
 </body>
 </html>
