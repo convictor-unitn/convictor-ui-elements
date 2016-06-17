@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Test template</title>
+  <link rel="stylesheet" type="text/css" href="../test/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../partials/menu/menu_mobile/menu_mobile.css">
+  <link rel="stylesheet" type="text/css" href="../test/test.css">
+
+
+</head>
+<body>
+<!-- Menu -->
+<div class="ui grid">
+  <div class="computer tablet only row">
+    <div class="ui borderless inverted fixed menu navbar page">
+
+      <!-- Left -->
+      <!-- Logo  -->
+      <a href="#" class="brand item">
+        <img class="logo" src="assets/images/logo.png">
+        Project Name
+      </a>
+
+      <!-- Center -->
+      <!-- Search Bar -->
+      <div class="ui search mini item">
+        <div class="ui icon input">
+          <input class = "prompt" type="text" placeholder="Search...">
+          <i class="search icon"></i>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <!-- Notificazion Dropdown -->
+      <div class="ui simple dropdown right item">
+        Notifications <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">notify 1</a>
+          <a class="item" href="#">notify 2</a>
+          <a class="item" href="#">Open</a>
+        </div>
+      </div>
+      <!-- Registered User -->
+      <div class="ui simple dropdown item">
+        Name Surname <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Profile</a>
+          <a class="item" href="#">Log Out</a>
+        </div>
+      </div>
+      <!-- Owner User -->
+      <a href="#" class="item">
+        My Restaurant(s)
+      </a>
+      <!-- Anonymous User -->
+      <div class="item">
+        <div class="ui primary button right">Sign up</div>
+      </div>
+      <div class="item">
+        <div class="ui button right">Log-in</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Mobile View Menu -->
+
+  <div class="mobile only row">
+    <div class="ui borderless fixed inverted navbar menu">
+
+      <!-- Left -->
+      <!-- Logo  -->
+      <a href="#" class="brand item">
+        <img class="logo" src="assets/images/logo.png">
+        Logo
+      </a>
+
+      <!-- Center -->
+      <!-- Search Bar -->
+      <div class="ui search mini item">
+        <div class="ui icon input">
+          <input class = "prompt" type="text" placeholder="Search...">
+          <i class="search icon"></i>
+        </div>
+      </div>
+      <div class="right menu open">
+        <a href="" class="menu item">
+          <i class="content icon"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="ui vertical navbar menu">
+
+
+      <!-- Right -->
+      <!-- Notification Dropdown -->
+      <div class="ui item">
+        <div class="text">Notifications </div>
+        <div class="menu">
+          <a class="item" href="#">notify 1</a>
+          <a class="item" href="#">notify 2</a>
+          <a class="item" href="#">Open</a>
+        </div>
+      </div>
+
+      <!-- Registered User -->
+      <div class="item">
+        <div class="ui text item">Name Surname </div>
+        <div class="menu">
+          <a class="item" href="#">Profile</a>
+          <a class="item" href="#">Log Out</a>
+        </div>
+      </div>
+
+      <!-- Owner User -->
+      <a href="#" class="item">
+        My Restaurant(s)
+      </a>
+
+      <!-- Anonymous User -->
+      <div class="item">
+        <div class="ui primary button right">Sign up</div>
+      </div>
+      <div class="item">
+        <div class="ui button right">Log-in</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- End Menu -->
+
+<div class="ui container">
+  <!-- Restaurant Image -->
+  <div class="ui grid">
+    <div class="column">
+      <img class="ui rounded centered bordered image" src="images/restaurant.jpg"/>
+    </div>
+  </div>
+
+  <div class="ui center aligned middle aligned grid">
+    <!-- Restaurant Name -->
+    <div class="ui header large">
+      Trattoria Milanese
+      <div class="ui basic tiny button">
+        Reclama
+      </div>
+    </div>
+  </div>
+
+  <!-- Rating Infos & Reviews Infos -->
+    <div class="ui center aligned middle aligned four column stackable grid">
+      <div class="column">
+        <div class="ui small statistic">
+          <div class="value">
+            2,204
+          </div>
+          <div class="label">
+            total reviews
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui statistic">
+          <div class="ui huge center rating" data-rating="1" data-max-rating="5"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Restaurant Infos -->
+    <div class="ui center aligned six column stackable grid">
+      <div class="column">
+        <div clas="ui grid">
+          <div class=" column">Cucina</div>
+          <div class="ui divider"></div>
+          <div class=" column">cinese</div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div clas="ui center aligned grid">
+          <div class="column">Orari di apertura</div>
+          <div class="ui divider"></div>
+          <div class="column">18.30 - 01.30</div>
+        </div>
+      </div>
+
+        <div class="column">
+        <div clas="ui center aligned grid">
+          <div class="column">Fascia di prezzo</div>
+          <div class="ui divider"></div>
+          <div class="column">8.00 - 12.00</div>
+        </div>
+        </div>
+
+        <div class="column">
+        <div clas="ui center aligned grid">
+          <div class="column">Giorno di chiusura</div>
+          <div class="ui divider"></div>
+          <div class="column">LUN - MER</div>
+        </div>
+      </div>
+      </div>
+
+    <!-- Show Reviews/Map Buttons -->
+    <div class="ui stackable center aligned four columns grid">
+      <div class="column">
+        <div class=" two ui basic buttons">
+          <button class="ui button">Recensioni</button>
+          <div class="or"></div>
+          <button class="ui button ">Mappa</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui one column centered grid">
+      <div class="column">
+        <div class="ui divider"></div>
+        <div class="ui comments">
+          <div class="comment">
+            <a class="avatar">
+              <img src="/images/avatar/small/stevie.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Stevie Feliciano</a>
+              <div class="metadata">
+                <div class="date">2 days ago</div>
+                <div class="rating">
+                  <i class="star icon"></i>
+                  5 Faves
+                </div>
+              </div>
+              <div class="text">
+                Hey guys, I hope this example comment is helping you read this documentation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui center aligned grid">
+      <div class="column">
+        <div class="ui segment">
+          <div class="ui header">Write a review</div>
+            <div class="ui large center rating" data-rating="1" data-max-rating="5"></div>
+              <div class="ui center comment">
+                <form class="ui small reply form">
+                  <div class="field">
+                    <textarea></textarea>
+                  </div>
+                  <div class="ui basic submit labeled icon button">
+                    <i class="icon edit"></i> Add Reply
+                  </div>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../test/dist/semantic.min.js"></script>
+  <!-- Menu mobile js -->
+  <script src="../partials/menu/menu_mobile/menu_mobile.js"></script>
+  <!-- Data rating script enabler -->
+  <script src="restaurant_profile.js"></script>
+</body>
+</html>
