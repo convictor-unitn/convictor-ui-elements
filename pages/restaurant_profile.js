@@ -4,13 +4,13 @@ $(document).ready(function(){
 
   $('.tabular.menu .item').tab();
 
-  $('.reply.form').hide();
+  $('.comments .reply.form').hide();
 
   $('.actions .reply').click(function(){
     $(this).parent().next().toggle();
   });
 
-  $('.reply.form .button').click(function(){
+  $('.comments .reply.form .button').click(function(){
     $(this).parent().toggle();
   });
 });
