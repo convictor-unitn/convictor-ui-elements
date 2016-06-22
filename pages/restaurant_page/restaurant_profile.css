@@ -10,3 +10,7 @@
   width:13px;
   padding:0
 }
+
+#tabs {
+  min-height: 500px;
+}
