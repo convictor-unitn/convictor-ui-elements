@@ -26,19 +26,36 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
+
+
 $(document).ready(function(){
+  //Star rating initializer
   $('.ui.rating').rating();
 
+  //Tabular menu initializer
   $('.tabular.menu .item').tab();
 
+  //Hides all reply forms in reviews
   $('.comments .reply.form').hide();
 
+  //Manages to show/hide reviews
   $('.actions .reply').click(function(){
     $(this).parent().next().toggle();
   });
 
   $('.comments .reply.form .button').click(function(){
     $(this).parent().toggle();
+  });
+
+  //Add new image modal initializer
+  $('.ui.modal').modal();
+
+  $(".add_image").click(function(){
+    $('.ui.modal')
+    .modal({
+      blurring: true
+    })
+    .modal('show');
   });
 
 });

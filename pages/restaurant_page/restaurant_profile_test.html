@@ -8,8 +8,9 @@
 
   <!-- Site Properties -->
   <title>Test template</title>
-  <link rel="stylesheet" type="text/css" href="../../test/dist/semantic.min.css">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" type="text/css" href="../../test/dist/semantic.min.css">
+
   <link rel="stylesheet" type="text/css" href="../../partials/menu/menu_mobile/menu_mobile.css">
 
   <link rel="stylesheet" type="text/css" href="../../test/test.css">
@@ -164,9 +165,8 @@
           <img class="ui centered image mySlides" src="../images/rest2.jpg">
           <img class="ui centered image mySlides" src="../images/rest3.jpg">
           <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
-            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
+            <div class="w3-left w3-padding-left w3-hover-text-white w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-padding-right w3-hover-text-white" onclick="plusDivs(1)">&#10095;</div>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
@@ -300,10 +300,11 @@
 
       <div class="row">
         <div class="column">
-          <div class="ui three item tabular menu">
+          <div class="ui four item tabular menu">
             <a class="item active" data-tab="recensioni">Recensioni</a>
             <a class="item " data-tab="mappa">Mappa</a>
             <a class="item" data-tab="reclama">Reclama</a>
+            <a class="item" data-tab="addimage">Carica Immagine</a>
           </div>
         </div>
       </div>
@@ -453,6 +454,33 @@
           </div>
         </div>
         <!-- End Reclama Tab -->
+        <!-- Add Image Tab -->
+        <div class="ui tab" data-tab="addimage">
+          <div class="ui center aligned grid">
+            <div class="column">
+              <button class="ui button add_image">Aggiungi Immagine</button>
+              <div class="ui modal">
+                <i class="close icon"></i>
+                <div class="header">
+                  Modal Title
+                </div>
+                <div class="image content">
+                  <div class="image">
+                    An image can appear on left or an icon
+                  </div>
+                  <div class="description">
+                    A description can appear on the right
+                  </div>
+                </div>
+                <div class="actions">
+                  <div class="ui button">Cancel</div>
+                  <div class="ui button">OK</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Add Image Tab -->
       </div>
     </div>
   </div>
