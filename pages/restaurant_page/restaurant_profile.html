@@ -10,9 +10,20 @@
   </div>
 
   <!-- Restaurant Image -->
-  <div class="ui  grid">
+  <div class="ui two column centered grid">
     <div class="column">
-      <img class="ui rounded centered bordered image" src="images/restaurant.jpg"/>
+        <img class="ui centered image mySlides" src="../images/rest0.jpg">
+        <img class="ui centered image mySlides" src="../images/rest1.jpg">
+        <img class="ui centered image mySlides" src="../images/rest2.jpg">
+        <img class="ui centered image mySlides" src="../images/rest3.jpg">
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+          <div class="w3-left w3-padding-left w3-hover-text-white w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-padding-right w3-hover-text-white" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        </div>
     </div>
   </div>
 
@@ -49,7 +60,7 @@
       </div>
     </div>
     <div class="column">
-      <img class="ui small centered image" src="images/default_qrcode.png"/>
+      <img class="ui small centered image" src="../images/default_qrcode.png"/>
     </div>
   </div>
 
@@ -141,16 +152,17 @@
 
     <div class="row">
       <div class="column">
-        <div class="ui three item tabular menu">
+        <div class="ui four item tabular menu">
           <a class="item active" data-tab="recensioni">Recensioni</a>
           <a class="item " data-tab="mappa">Mappa</a>
           <a class="item" data-tab="reclama">Reclama</a>
+          <a class="item" data-tab="addimage">Carica Immagine</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="ui stackable grid">
+  <div id ="tabs"class="ui stackable grid">
     <div class="column">
       <!-- Recensioni Tab -->
       <div class="ui tab active" data-tab="recensioni">
@@ -260,7 +272,7 @@
                   <div class="ui header">Write a review</div>
                   <div class="ui large center rating" data-rating="1" data-max-rating="5"></div>
                   <div class="ui center comment">
-                    <form class="ui small  form">
+                    <form class="ui small reply form">
                       <div class="field">
                         <textarea></textarea>
                       </div>
@@ -279,7 +291,7 @@
       <!-- Mappa Tab -->
       <div class="ui tab" data-tab="mappa">
         <div class="ui center aligned grid">
-          <div class="column">
+          <div id="map" class="column">
             Mappa
           </div>
         </div>
@@ -294,6 +306,31 @@
         </div>
       </div>
       <!-- End Reclama Tab -->
+      <!-- Add Image Tab -->
+      <div class="ui tab" data-tab="addimage">
+        <div class="ui center aligned grid">
+          <div class="column">
+            <button class="ui button add_image">Aggiungi Immagine</button>
+            <div class="ui modal">
+              <div class="ui segment">
+                <div class="ui header center">
+                  Aggiungi Nuova Immagine
+                </div>
+                <div class="ui segment">
+                  <form>
+                    <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple >
+                    <div class="actions">
+                      <div class="ui close button">Cancel</div>
+                      <input class="ui button" type="submit"></input>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Add Image Tab -->
     </div>
   </div>
 </div>
