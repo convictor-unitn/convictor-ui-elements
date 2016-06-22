@@ -8,10 +8,10 @@
 
   <!-- Site Properties -->
   <title>Test template</title>
-  <link rel="stylesheet" type="text/css" href="../../partials/menu/menu_mobile/menu_mobile.css">
-  <link rel="stylesheet" type="text/css" href="../../test/sliderjs/example.css" >
-  <link rel="stylesheet" type="text/css" href="../../test/sliderjs/font-awesome.min.css" >
   <link rel="stylesheet" type="text/css" href="../../test/dist/semantic.min.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" type="text/css" href="../../partials/menu/menu_mobile/menu_mobile.css">
+
   <link rel="stylesheet" type="text/css" href="../../test/test.css">
   <link rel="stylesheet" type="text/css" href="restaurant_profile.css">
 
@@ -142,6 +142,7 @@
     </div>
   </div>
 
+
   <!-- End Menu -->
 
   <div class="ui container">
@@ -156,12 +157,21 @@
     </div>
 
     <!-- Restaurant Image -->
-    <div class="ui  grid">
+    <div class="ui two column centered grid">
       <div class="column">
-        <!-- <img class="ui rounded centered bordered image" src="../images/restaurant.jpg"/> -->
-        <div id="slides">
-          <img src="../images/restaurant.jpg"/>
-        </div>
+          <img class="ui centered image mySlides" src="../images/rest0.jpg">
+          <img class="ui centered image mySlides" src="../images/rest1.jpg">
+          <img class="ui centered image mySlides" src="../images/rest2.jpg">
+          <img class="ui centered image mySlides" src="../images/rest3.jpg">
+          <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          </div>
       </div>
     </div>
 
@@ -450,8 +460,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="../../test/dist/semantic.min.js"></script>
-  <!-- ImageSlider js -->
-  <script src="../../test/sliderjs/jquery.slides.js"></script>
   <!-- Menu mobile js -->
   <script src="../../partials/menu/menu_mobile/menu_mobile.js"></script>
   <!-- Data rating script enabler -->
