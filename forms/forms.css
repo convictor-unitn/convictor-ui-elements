@@ -1,19 +1,21 @@
 body {
     background-image: url(sfondo.png); 
 }
-        
-body > .grid {
-    height: 100%;
+      
+.ui.grid {
+    margin-top: 2em;
 }
         
 .column {
     max-width: 450px;
 }
 
+/*bottone primario: colore dorato*/
 #p_button {
     background-color: #ffbf66;
 }
 
+/*testo con sfondo trasparente*/
 #s_text{
     background-color:rgba(256,256,256,0.6)
 }

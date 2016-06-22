@@ -1,28 +1,25 @@
-    body {
-      background-image: url(sfondo.png); 
-    }
+body {
+    background-image: url(sfondo.png); 
+  }
 
-    .masthead.segment {
-      min-height: 700px;
-      padding: 1em 0em;
-    }
+.masthead.segment {
+  min-height: 700px;
+  padding: 1em 0em;
+}
 
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
 
-    .masthead h1.ui.header {
-      margin-top: 1em;
-      margin-bottom: 0em;
-      font-size: 7em;
-      font-weight: normal;
-    }
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-    }
+.masthead h1.ui.header {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-size: 7em;
+  font-weight: normal;
+}
 
-    .mysegment {
-      margin-right: 0em;
-      margin-left: 0em;
-    }
+@media only screen and (max-width: 700px){
+  .masthead h1.ui.header {
+  font-size: 3em;
+  }
+}
