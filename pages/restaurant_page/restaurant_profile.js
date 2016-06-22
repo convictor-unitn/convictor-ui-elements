@@ -17,16 +17,30 @@ function showDivs(n) {
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
+    x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace(" w3-white", "");
   }
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-white";
 }
 
+function initMap() {
+  var myLatLng = {lat: -25.363, lng: 131.044};
 
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+
+}
 
 $(document).ready(function(){
   //Star rating initializer
@@ -51,11 +65,18 @@ $(document).ready(function(){
   $('.ui.modal').modal();
 
   $(".add_image").click(function(){
-    $('.ui.modal')
-    .modal({
-      blurring: true
-    })
-    .modal('show');
+    $('.ui.modal').modal('show');
+  });
+
+  $(function () {
+    $('#fileupload').fileupload({
+      dataType: 'json',
+      done: function (e, data) {
+        $.each(data.result.files, function (index, file) {
+          $('<p/>').text(file.name).appendTo(document.body);
+        });
+      }
+    });
   });
 
 });

@@ -439,7 +439,7 @@
         <!-- Mappa Tab -->
         <div class="ui tab" data-tab="mappa">
           <div class="ui center aligned grid">
-            <div class="column">
+            <div id="map" class="column">
               Mappa
             </div>
           </div>
@@ -461,21 +461,19 @@
               <button class="ui button add_image">Aggiungi Immagine</button>
               <div class="ui modal">
                 <div class="ui segment">
-                  <i class="close icon"></i>
-                  <div class="header">
+                  <div class="ui header center">
                     Aggiungi Nuova Immagine
                   </div>
-                      <label for="file" class="ui icon button">
-                          <i class="file icon"></i>
-                          Open File
-                      </label>
+                  <div class="ui segment">
+                    <form>
                       <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple >
-
-                  <div class="actions">
-                    <div class="ui button">Cancel</div>
-                    <div class="ui button">OK</div>
+                      <div class="actions">
+                        <div class="ui close button">Cancel</div>
+                        <input class="ui button" type="submit"></input>
+                      </div>
+                    </form>
                   </div>
-                </div>
+
                 </div>
               </div>
             </div>
@@ -488,26 +486,15 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbiud33G2KsodO5JvP-5HQzoSTuWiI0a8&callback=initMap" type="text/javascript"></script>
   <script src="../../test/dist/semantic.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/vendor/jquery.ui.widget.js"></script>
-  <script src="js/jquery.iframe-transport.js"></script>
-  <script src="js/jquery.fileupload.js"></script>
+
+
   <!-- Menu mobile js -->
   <script src="../../partials/menu/menu_mobile/menu_mobile.js"></script>
   <!-- Data rating script enabler -->
   <script src="restaurant_profile.js"></script>
-  <script>
-    $(function () {
-        $('#fileupload').fileupload({
-            dataType: 'json',
-            done: function (e, data) {
-                $.each(data.result.files, function (index, file) {
-                    $('<p/>').text(file.name).appendTo(document.body);
-                });
-            }
-        });
-    });
-</script>
+
 </body>
 </html>
