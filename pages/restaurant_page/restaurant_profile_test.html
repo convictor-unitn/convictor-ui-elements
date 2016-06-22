@@ -310,7 +310,7 @@
       </div>
     </div>
 
-    <div class="ui stackable grid">
+    <div id ="tabs"class="ui stackable grid">
       <div class="column">
         <!-- Recensioni Tab -->
         <div class="ui tab active" data-tab="recensioni">
@@ -460,21 +460,21 @@
             <div class="column">
               <button class="ui button add_image">Aggiungi Immagine</button>
               <div class="ui modal">
-                <i class="close icon"></i>
-                <div class="header">
-                  Modal Title
-                </div>
-                <div class="image content">
-                  <div class="image">
-                    An image can appear on left or an icon
+                <div class="ui segment">
+                  <i class="close icon"></i>
+                  <div class="header">
+                    Aggiungi Nuova Immagine
                   </div>
-                  <div class="description">
-                    A description can appear on the right
+                      <label for="file" class="ui icon button">
+                          <i class="file icon"></i>
+                          Open File
+                      </label>
+                      <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple >
+
+                  <div class="actions">
+                    <div class="ui button">Cancel</div>
+                    <div class="ui button">OK</div>
                   </div>
-                </div>
-                <div class="actions">
-                  <div class="ui button">Cancel</div>
-                  <div class="ui button">OK</div>
                 </div>
               </div>
             </div>
@@ -488,9 +488,25 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="../../test/dist/semantic.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/vendor/jquery.ui.widget.js"></script>
+  <script src="js/jquery.iframe-transport.js"></script>
+  <script src="js/jquery.fileupload.js"></script>
   <!-- Menu mobile js -->
   <script src="../../partials/menu/menu_mobile/menu_mobile.js"></script>
   <!-- Data rating script enabler -->
   <script src="restaurant_profile.js"></script>
+  <script>
+    $(function () {
+        $('#fileupload').fileupload({
+            dataType: 'json',
+            done: function (e, data) {
+                $.each(data.result.files, function (index, file) {
+                    $('<p/>').text(file.name).appendTo(document.body);
+                });
+            }
+        });
+    });
+</script>
 </body>
 </html>
