@@ -1,12 +1,12 @@
 body {
-    background-image: url(sfondo.png); 
+    background-image: url(sfondo.png);
 }
-      
+
 .ui.grid {
     margin-top: 2em;
 }
-        
-.column {
+
+.myform {
     max-width: 450px;
 }
 
